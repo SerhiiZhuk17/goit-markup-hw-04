@@ -235,10 +235,10 @@ body {
 .features-list::before {
     margin-bottom: 10px;
     display: block;
-    outline: 1px solid red;
     content: "";
     background-color: #F5F4FA;
     height: 120px;
+    border-radius: 4px;
 }
 
 .features-list:not(:last-child) {
@@ -539,7 +539,7 @@ margin-bottom:  4px;
     rgba(47, 48, 58, 0.4),
     rgba(47, 48, 58, 0.4)),
     url(/images/main.jpg);
-    
+
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
