@@ -128,9 +128,42 @@ body {
     color:var(--accent-color);
 }
 
+.contacts {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.icon-envelope {
+        display: flex;
+        align-items: center;
+        margin-left: auto;
+        margin-right: 10px;
+    fill: currentColor;
+
+    max-width: 16px;
+    max-height: 12px;
+}
+
+.icon-envelope:hover,:focus {
+    color: var(--accent-color);
+}
+
+.icon-smartphone {
+    fill: currentColor;
+    margin-left: auto;
+    margin-right: 10px;
+    display: flex;
+    align-items: center;
+    max-width: 10px;
+    max-height: 16px;
+}
+
 .contact-mail,
 .contact-number {
-    display: block;
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
     padding: 32px 0;
     font-weight: 500;
     font-size: 14px;
@@ -178,9 +211,16 @@ body {
     padding: 200px 0;
     margin: 0 auto;
     max-width: 1600px;
-    background-color: #C4C4C4;
     text-align: center;
+    background-color: #C4C4C4;
 
+    background-image: linear-gradient(
+    to right, 
+    rgba(47, 48, 58, 0.4), 
+    rgba(47, 48, 58, 0.4)
+    ),
+    
+    url(/images/main.jpg)
 }
 
 .main-title {
@@ -224,22 +264,31 @@ body {
 .main-features-list {
     display: flex;
     justify-content: space-between;
-
 }
 
 .features-list {
-    min-height: 100px;
     max-width: 270px;
+
 }
 
-.features-list::before {
-    margin-bottom: 10px;
-    display: block;
-    content: "";
-    background-color: #F5F4FA;
-    height: 120px;
-    border-radius: 4px;
+.features-list-container {
+        height: 120px;
+            max-width: 270px;
+        align-items: center;
+            display: flex;
+            justify-content: center;
+            background-position: center;
+            background-color: #F5F4FA;
+            border-radius: 4px;
+            margin-bottom: 30px;
 }
+
+.features-list-svg {
+    width: 70px;
+    height: 70px;
+
+}
+
 
 .features-list:not(:last-child) {
     margin-right: 30px;
@@ -316,7 +365,6 @@ body {
 .employees {
     display: flex;
     flex-wrap: wrap;
-    /*gap: 30px;*/
 }
 
 .employees-card {
@@ -338,10 +386,13 @@ body {
 }
 
 .employee-border {
+    justify-content: space-between;
     background-color: #FFFFFF;
     border-radius: 0px 0px 4px 4px;
     padding-top: 30px;
     padding-bottom: 30px;
+    padding-left: 32px;
+    padding-right: 32px;
 }
 
 .nammes {
@@ -355,6 +406,7 @@ body {
 }
 
 .their-job {
+    margin-bottom: 10px;
     font-weight: 400;
     font-size: 16px;
     line-height: 1.18;
@@ -362,6 +414,37 @@ body {
     letter-spacing: 0.03em;
     color: var(--secondary-text-color-light-theme);
 }
+
+.social-list {
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+
+}
+
+.social-list-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background-color: #FFFFFF;
+    fill: #AFB1B8;
+}
+
+.social-list-link:hover,
+.social-list-link:focus {
+    background-color: var(--accent-color);
+    fill: var(--primary-text-color-dark-theme);
+}
+
+
+.social-list-icon:hover {
+    fill: #FFFFFF;
+}
+
 /*==============/STUDIO===========*/
 
 
@@ -408,10 +491,6 @@ body {
 }
 
 
-
-
-
-
 .main-filt-button:hover,
 .main-filt-button:focus {
     border-style: none;
@@ -426,8 +505,6 @@ body {
     flex-wrap: wrap;
 
 }
-
-
 
 .portf-items {
     margin-bottom: 30px;
@@ -465,7 +542,56 @@ margin-bottom:  4px;
         color: var(--secondary-text-color-light-theme);
 }
 
+/*==============Regular customer===========*/
 
+.customers-title {
+    margin-top: 94px;
+    margin-bottom: 50px;
+
+}
+
+.main-customers {
+    gap: 30px;
+    display: flex;
+    justify-content: center;
+
+    margin-bottom: 94px;
+}
+
+.customers-list {
+
+}
+
+.customers-box  {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 170px;
+    min-height: 92px;
+    margin: 0;
+    border: 1px solid #AFB1B8;
+    border-radius: 4px;
+    fill: #AFB1B8;
+    
+}
+
+.customers-box:hover,
+.customers-box:focus {
+    fill: var(--accent-color);
+}
+
+.customers-box:hover,
+.customers-box:focus {
+    fill: var(--accent-color);
+    border: 1px solid var(--accent-color)
+}
+
+.customers-svg {
+    align-items: center;
+}
+
+
+/*==============/Regular customer=========*/
 
 /*==============/MAIN===========*/
 
@@ -528,18 +654,14 @@ margin-bottom:  4px;
 
 
 .overlay {
-    max-width: 1600px;
-    min-height: 600px;
+    max-width: ;
+    min-height: ;
     margin-left: auto;
     margin-right: auto;
-    background-color: #C4C4C4;
-    
-    background-image: 
-    linear-gradient(to right,
-    rgba(47, 48, 58, 0.4),
-    rgba(47, 48, 58, 0.4)),
-    url(/images/main.jpg);
+    outline: 1px solid black;
 
+    background-image: linear-gradient() 
+    url();
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
