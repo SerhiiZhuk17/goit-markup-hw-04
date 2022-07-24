@@ -434,6 +434,12 @@ body {
     fill: #AFB1B8;
 }
 
+.social-list-link-dark {
+    background-color: rgba(255, 255, 255, 0.1);
+    ;
+    fill: #FFFFFF;
+}
+
 .social-list-link:hover,
 .social-list-link:focus {
     background-color: var(--accent-color);
@@ -604,9 +610,14 @@ margin-bottom:  4px;
     padding: 60px 0px;
 }
 
+.footer-contact-list {
+    display: flex;
+
+}
+
 .footer-logo {
     display:inline-block;
-
+    
     margin-bottom: 20px;
 
     font-family: var(--secondary-font);
@@ -619,6 +630,8 @@ margin-bottom:  4px;
 
 .footer-adress {
 
+    display: flex;
+        flex-direction: column;
     font: var(--primary-font);
     font-weight: 400;
         font-size: 14px;
@@ -634,7 +647,8 @@ margin-bottom:  4px;
 }
 
 .footer-adress-list {
-
+    display: inline-block;
+    flex-direction: column;
 }
 
 .footer-contact-mail,
@@ -647,8 +661,30 @@ margin-bottom:  4px;
     color: rgba(255, 255, 255, 0.6);
 }
 
+.join {
+    display: flex;
+    flex-direction: column;
+    display: inline-block;
+    margin-left: 70px;
+    margin-top: 12px;
+}
 
+.join-title {
+    display: flex;
+    font-weight: 700;
+        font-size: 14px;
+        line-height: 1.14;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+        margin-bottom: 20px;
+        color: #FFFFFF;
 
+}
+
+.join-social-style {
+    fill: rgba(255, 255, 255, 0.1);
+    
+}
 
 /*==============/FOOTER===========*/
 
