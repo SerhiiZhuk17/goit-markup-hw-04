@@ -554,17 +554,13 @@ margin-bottom:  4px;
 /*==============Regular customer===========*/
 
 .customers-title {
-    margin-top: 94px;
     margin-bottom: 50px;
-
 }
 
 .main-customers {
     gap: 30px;
     display: flex;
     justify-content: center;
-
-    margin-bottom: 94px;
 }
 
 .customers-list {
